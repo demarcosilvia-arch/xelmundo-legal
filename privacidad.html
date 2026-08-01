@@ -99,7 +99,7 @@
   </p>
 
   <h2>2. Qué datos recolectamos</h2>
-  <p><strong>Datos que nos das al crear tu cuenta:</strong></p>
+  <p><strong>Datos que nos das al crear tu cuenta (esto sí sale de tu teléfono, va a nuestros servidores):</strong></p>
   <ul>
     <li>Nombre y apellido</li>
     <li>Dirección de e-mail (se usa también como usuario para iniciar sesión)</li>
@@ -108,14 +108,19 @@
     <li>Ciudad y país (opcional)</li>
   </ul>
 
-  <p><strong>Datos que generás al usar la app:</strong></p>
-  <ul>
-    <li>Itinerarios de viaje: destinos, fechas, tramos de vuelo, alojamientos, actividades</li>
-    <li>Gastos que cargues durante el viaje</li>
-    <li>Notas, entradas de diario y documentos que subas (pueden incluir texto e imágenes)</li>
-    <li>Fotos de tu galería, únicamente si elegís adjuntarlas en Diario o Documentos — te pedimos permiso explícito antes de acceder a tu galería, y solo accedemos a las fotos que vos elijas, nunca a toda tu galería completa</li>
-    <li>Contactos de tu red de viaje, si cargás esa información dentro de la app</li>
-  </ul>
+  <div class="aviso">
+    <strong>El contenido de tus viajes queda en tu teléfono — no lo recolectamos.</strong>
+    Itinerarios, gastos, notas, entradas de diario (con sus fotos), documentos que
+    importés (incluidos PDFs y fotos) y tus compañeros de Red se guardan
+    únicamente en la base de datos local del dispositivo (SQLite). Nunca se
+    suben a nuestros servidores ni a ningún servicio de terceros — si
+    desinstalás la app, ese contenido se pierde junto con ella, salvo que lo
+    hayas exportado vos misma (por ejemplo, como PDF con Reportes). Para
+    adjuntar fotos en Diario o Documentos te pedimos permiso explícito de
+    acceso a tu galería — solo accedemos a las fotos puntuales que vos
+    elijas, nunca a toda tu galería completa, y esas fotos tampoco salen
+    del teléfono.
+  </div>
 
   <p><strong>Datos de compras y plan:</strong></p>
   <ul>
@@ -151,7 +156,7 @@
   <h2>4. Con quién compartimos tus datos</h2>
   <p>No vendemos tus datos a nadie. Los compartimos únicamente con los proveedores que necesitamos para operar la app:</p>
   <ul>
-    <li><strong>Google Firebase / Google Cloud:</strong> aloja la base de datos (Firestore) y gestiona el inicio de sesión (Authentication). Los datos se almacenan en servidores de Google Cloud en la región de San Pablo, Brasil.</li>
+    <li><strong>Google Firebase / Google Cloud:</strong> aloja los datos de tu cuenta (nombre, mail, teléfono, plan) y gestiona el inicio de sesión (Authentication) — no el contenido de tus viajes, que queda en tu dispositivo. Los datos se almacenan en servidores de Google Cloud en la región de San Pablo, Brasil.</li>
     <li><strong>RevenueCat:</strong> gestiona el estado de tus compras y suscripciones.</li>
     <li><strong>Apple App Store / Google Play:</strong> procesan los pagos cuando comprás un plan — tus datos de pago quedan exclusivamente en su sistema, xelmundo nunca los recibe.</li>
   </ul>
